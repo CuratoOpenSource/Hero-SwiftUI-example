@@ -18,4 +18,17 @@ class SwiftUISourceViewController: UIHostingController<ViewWithImage> {
     @objc required dynamic init?(coder aDecoder: NSCoder) {
         super.init(rootView: ViewWithImage())
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        hero.isEnabled = true
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                         action: #selector(didTapBackground)))
+    }
+    
+    @objc func didTapBackground() {
+        dismiss(animated: true, completion: nil)
+    }
 }
