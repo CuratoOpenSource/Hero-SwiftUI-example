@@ -1,5 +1,5 @@
 # Hero-SwiftUI-example
-A simple three ViewController example which shows that Hero works when using Swift UI
+A simple three ViewController example which shows that [Hero](https://github.com/HeroTransitions/Hero) works when using Swift UI
 
 ## Contents
 
