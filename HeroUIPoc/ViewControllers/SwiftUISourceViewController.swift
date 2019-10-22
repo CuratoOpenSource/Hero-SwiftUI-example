@@ -8,13 +8,7 @@ import UIKit
 class SwiftUISourceViewController: UIHostingController<ImagesTableView> {
 
     @objc required dynamic init?(coder aDecoder: NSCoder) {
-        
-        super.init(rootView: ImagesTableView())
-        
-        tabBarItem = UITabBarItem(title: "SwiftUi",
-                                  image: UIImage(systemName: "photo"),
-                                  selectedImage: UIImage(systemName: "photo.fill"))
-
+        super.init(coder: aDecoder, rootView: ImagesTableView())
     }
     
     override func viewDidLoad() {
