@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		62493817235EFFC900D490B7 /* HeroUIPoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroUIPoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62493817235EFFC900D490B7 /* SwiftUIHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6249381A235EFFC900D490B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6249381C235EFFC900D490B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6249381E235EFFC900D490B7 /* UIKitSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitSourceViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		62493818235EFFC900D490B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				62493817235EFFC900D490B7 /* HeroUIPoc.app */,
+				62493817235EFFC900D490B7 /* SwiftUIHero.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 				6249382F235F01CD00D490B7 /* Hero */,
 			);
 			productName = HeroUIPoc;
-			productReference = 62493817235EFFC900D490B7 /* HeroUIPoc.app */;
+			productReference = 62493817235EFFC900D490B7 /* SwiftUIHero.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -331,8 +331,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MonoLofi.HeroUIPoc;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CuratoResearch.HeroUIPoc;
+				PRODUCT_NAME = SwiftUIHero;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -349,8 +349,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MonoLofi.HeroUIPoc;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CuratoResearch.HeroUIPoc;
+				PRODUCT_NAME = SwiftUIHero;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
