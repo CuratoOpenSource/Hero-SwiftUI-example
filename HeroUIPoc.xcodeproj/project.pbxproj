@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6249381B235EFFC900D490B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249381A235EFFC900D490B7 /* AppDelegate.swift */; };
 		6249381D235EFFC900D490B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249381C235EFFC900D490B7 /* SceneDelegate.swift */; };
-		6249381F235EFFC900D490B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249381E235EFFC900D490B7 /* ViewController.swift */; };
+		6249381F235EFFC900D490B7 /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249381E235EFFC900D490B7 /* ViewControllerA.swift */; };
 		62493822235EFFC900D490B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62493820235EFFC900D490B7 /* Main.storyboard */; };
 		62493824235EFFCB00D490B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62493823235EFFCB00D490B7 /* Assets.xcassets */; };
 		62493827235EFFCB00D490B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62493825235EFFCB00D490B7 /* LaunchScreen.storyboard */; };
+		62493830235F01CD00D490B7 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 6249382F235F01CD00D490B7 /* Hero */; };
+		62493832235F01EE00D490B7 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62493831235F01EE00D490B7 /* ViewControllerB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62493817235EFFC900D490B7 /* HeroUIPoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroUIPoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6249381A235EFFC900D490B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6249381C235EFFC900D490B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6249381E235EFFC900D490B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6249381E235EFFC900D490B7 /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		62493821235EFFC900D490B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62493823235EFFCB00D490B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62493826235EFFCB00D490B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62493828235EFFCB00D490B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62493831235F01EE00D490B7 /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62493830235F01CD00D490B7 /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +62,8 @@
 			children = (
 				6249381A235EFFC900D490B7 /* AppDelegate.swift */,
 				6249381C235EFFC900D490B7 /* SceneDelegate.swift */,
-				6249381E235EFFC900D490B7 /* ViewController.swift */,
+				6249381E235EFFC900D490B7 /* ViewControllerA.swift */,
+				62493831235F01EE00D490B7 /* ViewControllerB.swift */,
 				62493820235EFFC900D490B7 /* Main.storyboard */,
 				62493823235EFFCB00D490B7 /* Assets.xcassets */,
 				62493825235EFFCB00D490B7 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = HeroUIPoc;
+			packageProductDependencies = (
+				6249382F235F01CD00D490B7 /* Hero */,
+			);
 			productName = HeroUIPoc;
 			productReference = 62493817235EFFC900D490B7 /* HeroUIPoc.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 6249380E235EFFC900D490B7;
+			packageReferences = (
+				6249382E235F01CD00D490B7 /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = 62493818235EFFC900D490B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6249381F235EFFC900D490B7 /* ViewController.swift in Sources */,
+				62493832235F01EE00D490B7 /* ViewControllerB.swift in Sources */,
+				6249381F235EFFC900D490B7 /* ViewControllerA.swift in Sources */,
 				6249381B235EFFC900D490B7 /* AppDelegate.swift in Sources */,
 				6249381D235EFFC900D490B7 /* SceneDelegate.swift in Sources */,
 			);
@@ -338,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6249382E235F01CD00D490B7 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6249382F235F01CD00D490B7 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6249382E235F01CD00D490B7 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6249380F235EFFC900D490B7 /* Project object */;
 }
