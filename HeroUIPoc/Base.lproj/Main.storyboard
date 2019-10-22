@@ -34,7 +34,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="UIKit" id="zWr-VV-v0B"/>
+                    <tabBarItem key="tabBarItem" title="UIKit" image="photo.fill" catalog="system" selectedImage="photo" id="zWr-VV-v0B"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -53,7 +53,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Rqh-nV-9WU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SwiftUI" id="AU6-ZT-4Px"/>
+                    <tabBarItem key="tabBarItem" title="SwiftUI" image="photo.fill" catalog="system" selectedImage="photo" id="AU6-ZT-4Px"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2m-fo-h93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,6 +98,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="n14-bN-08e" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ltd-6N-E4A">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -113,5 +114,7 @@
     </scenes>
     <resources>
         <image name="Catalina" width="2168" height="1784"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
+        <image name="photo.fill" catalog="system" width="64" height="46"/>
     </resources>
 </document>

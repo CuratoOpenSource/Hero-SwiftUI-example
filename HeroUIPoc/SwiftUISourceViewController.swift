@@ -11,6 +11,10 @@ class SwiftUISourceViewController: UIHostingController<ImagesTableView> {
         
         super.init(rootView: ImagesTableView())
         
+        tabBarItem = UITabBarItem(title: "SwiftUi",
+                                  image: UIImage(systemName: "photo"),
+                                  selectedImage: UIImage(systemName: "photo.fill"))
+
         rootView.onTap = {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "B")
             vc.modalPresentationStyle = .fullScreen
