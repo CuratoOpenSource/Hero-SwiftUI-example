@@ -71,12 +71,12 @@
 				6249381E235EFFC900D490B7 /* UIKitSourceViewController.swift */,
 				62493835235F099900D490B7 /* SwiftUISourceViewController.swift */,
 				62493831235F01EE00D490B7 /* UIKitDestinationViewController.swift */,
+				62493833235F085600D490B7 /* ViewWithImage.swift */,
+				62493837235F2F3D00D490B7 /* ThumbNailImage.swift */,
 				62493820235EFFC900D490B7 /* Main.storyboard */,
 				62493823235EFFCB00D490B7 /* Assets.xcassets */,
 				62493825235EFFCB00D490B7 /* LaunchScreen.storyboard */,
 				62493828235EFFCB00D490B7 /* Info.plist */,
-				62493833235F085600D490B7 /* ViewWithImage.swift */,
-				62493837235F2F3D00D490B7 /* ThumbNailImage.swift */,
 			);
 			path = HeroUIPoc;
 			sourceTree = "<group>";
