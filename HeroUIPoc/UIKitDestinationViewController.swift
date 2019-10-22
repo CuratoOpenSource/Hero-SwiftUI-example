@@ -10,8 +10,6 @@ class UIKitDestinationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hero.isEnabled = true
-        
         view.addGestureRecognizer(UITapGestureRecognizer(target: self,
                                                          action: #selector(didTapBackground)))
     }

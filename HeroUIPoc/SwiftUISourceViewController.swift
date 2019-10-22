@@ -15,18 +15,17 @@ class SwiftUISourceViewController: UIHostingController<ImagesTableView> {
                                   image: UIImage(systemName: "photo"),
                                   selectedImage: UIImage(systemName: "photo.fill"))
 
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         rootView.onTap = {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "B")
             vc.modalPresentationStyle = .fullScreen
             
             self.present(vc, animated: true, completion: nil)
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        hero.isEnabled = true
     }
 }
 
