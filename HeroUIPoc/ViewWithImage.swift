@@ -12,6 +12,7 @@ import SwiftUI
 struct ThumbNailImage: View, UIViewRepresentable {
     
     let name: String
+    let isHeroEnabled: Bool
     
     func makeUIView(context: UIViewRepresentableContext<ThumbNailImage>) -> UIImageView {
         UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
@@ -22,22 +23,26 @@ struct ThumbNailImage: View, UIViewRepresentable {
         uiView.contentMode = .scaleAspectFit
         uiView.sizeThatFits(.init(width: 100, height: 100))
         uiView.hero.isEnabled = true
-        uiView.hero.id = "CatalinaImage"
+        uiView.hero.id = isHeroEnabled ? "CatalinaImage" : nil
     }
 }
 
 struct ViewWithImage: View {
     
     var onTap: (()->())?
-    let images = (0...100).map{ IdentifyableImage(id: $0, name: "ThumbCatalina") }
+    @State var images = (0...100).map{ IdentifyableImage(id: $0, name: "ThumbCatalina") }
     
     var body: some View {
         List(images) { image in
             
             HStack {
-                ThumbNailImage(name: image.name).allowsTightening(true).frame(width: 100, height: 100, alignment: .center)
+                ThumbNailImage(name: image.name, isHeroEnabled: image.isHeroEnabled).allowsTightening(true).frame(width: 100,
+                                                                                                                  height: 100,
+                                                                                                                  alignment: .center)
                 Text(image.name)
             }.onTapGesture {
+                self.images[image.id].isHeroEnabled = true
+                
                 self.onTap?()
             }
         }
@@ -55,4 +60,6 @@ struct IdentifyableImage: Identifiable {
     let id: Int
     
     let name: String
+    
+    var isHeroEnabled: Bool = false
 }
