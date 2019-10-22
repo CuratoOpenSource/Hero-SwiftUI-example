@@ -18,9 +18,9 @@ struct ViewWithImage: View {
         List(images) { image in
             
             HStack {
-                ThumbNailImage(name: image.name, isHeroEnabled: image.isHeroEnabled).allowsTightening(true).frame(width: 100,
-                                                                                                                  height: 100,
-                                                                                                                  alignment: .center)
+                ThumbNailImage(name: image.name, isHeroEnabled: image.isHeroEnabled).frame(width: 100,
+                                                                                           height: 100,
+                                                                                           alignment: .center)
                 Text(image.name)
             }.onTapGesture {
                 self.enableHeroExclusivelyForImage(atIndex: image.id)
