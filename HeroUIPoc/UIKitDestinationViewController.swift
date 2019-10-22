@@ -9,7 +9,7 @@
 import UIKit
 import Hero
 
-class ViewControllerA: UIViewController {
+class UIKitDestinationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,7 @@ class ViewControllerA: UIViewController {
     }
     
     @objc func didTapBackground() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "B")
-        vc.modalPresentationStyle = .fullScreen
-        
-        present(vc, animated: true, completion: nil)
-        
+        dismiss(animated: true, completion: nil)
     }
 }
 

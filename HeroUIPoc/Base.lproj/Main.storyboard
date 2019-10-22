@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View ControllerA-->
+        <!--Kit Source View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewControllerA" customModule="HeroUIPoc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="UIKitSourceViewController" customModule="HeroUIPoc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
-        <!--View ControllerB-->
+        <!--Kit Destination View Controller-->
         <scene sceneID="VL5-aJ-xPq">
             <objects>
-                <viewController storyboardIdentifier="B" id="fbf-Pi-pBe" customClass="ViewControllerB" customModule="HeroUIPoc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B" id="fbf-Pi-pBe" customClass="UIKitDestinationViewController" customModule="HeroUIPoc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hhb-9T-SrH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
