@@ -21,6 +21,8 @@ struct ThumbNailImage: View, UIViewRepresentable {
         uiView.image = UIImage(named: name)
         uiView.contentMode = .scaleAspectFit
         uiView.sizeThatFits(.init(width: 100, height: 100))
+        uiView.hero.isEnabled = true
+        uiView.hero.id = "CatalinaImage"
     }
 }
 
