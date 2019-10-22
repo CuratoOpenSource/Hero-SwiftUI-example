@@ -41,10 +41,18 @@ struct ViewWithImage: View {
                                                                                                                   alignment: .center)
                 Text(image.name)
             }.onTapGesture {
-                self.images[image.id].isHeroEnabled = true
+                self.enableHeroExclusivelyForImage(atIndex: image.id)
                 
                 self.onTap?()
             }
+        }
+    }
+    
+    func enableHeroExclusivelyForImage(atIndex indexOfImageWithHeroEnabled: Int) {
+        
+        (0..<images.count).forEach { (currentIndex) in
+            
+            self.images[currentIndex].isHeroEnabled = currentIndex == indexOfImageWithHeroEnabled
         }
     }
 }
