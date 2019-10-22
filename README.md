@@ -9,4 +9,4 @@ The project has two hero enabled viewcontrollers with one or more images. One UI
 
 ## Demo
 
-![Example gif](RepoAssets/example.gif)
+![Example gif](RepoAssets/Example.gif)
