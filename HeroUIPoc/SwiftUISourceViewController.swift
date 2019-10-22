@@ -1,9 +1,5 @@
 //
-//  SwiftUISourceViewController.swift
-//  HeroUIPoc
-//
-//  Created by menno on 22/10/2019.
-//  Copyright © 2019 MonoLofi. All rights reserved.
+//  Copyright © 2019 Curato Research BV. All rights reserved.
 //
 
 import SwiftUI
