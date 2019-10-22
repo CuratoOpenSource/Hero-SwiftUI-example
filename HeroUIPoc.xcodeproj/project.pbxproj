@@ -68,17 +68,33 @@
 			children = (
 				6249381A235EFFC900D490B7 /* AppDelegate.swift */,
 				6249381C235EFFC900D490B7 /* SceneDelegate.swift */,
-				6249381E235EFFC900D490B7 /* UIKitSourceViewController.swift */,
-				62493835235F099900D490B7 /* SwiftUISourceViewController.swift */,
-				62493831235F01EE00D490B7 /* UIKitDestinationViewController.swift */,
-				62493833235F085600D490B7 /* ImagesTableView.swift */,
-				62493837235F2F3D00D490B7 /* ThumbNailImage.swift */,
+				62493839235F393E00D490B7 /* ViewControllers */,
+				6249383A235F395800D490B7 /* SwiftUI Views */,
 				62493820235EFFC900D490B7 /* Main.storyboard */,
 				62493823235EFFCB00D490B7 /* Assets.xcassets */,
 				62493825235EFFCB00D490B7 /* LaunchScreen.storyboard */,
 				62493828235EFFCB00D490B7 /* Info.plist */,
 			);
 			path = HeroUIPoc;
+			sourceTree = "<group>";
+		};
+		62493839235F393E00D490B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6249381E235EFFC900D490B7 /* UIKitSourceViewController.swift */,
+				62493835235F099900D490B7 /* SwiftUISourceViewController.swift */,
+				62493831235F01EE00D490B7 /* UIKitDestinationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6249383A235F395800D490B7 /* SwiftUI Views */ = {
+			isa = PBXGroup;
+			children = (
+				62493833235F085600D490B7 /* ImagesTableView.swift */,
+				62493837235F2F3D00D490B7 /* ThumbNailImage.swift */,
+			);
+			path = "SwiftUI Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
