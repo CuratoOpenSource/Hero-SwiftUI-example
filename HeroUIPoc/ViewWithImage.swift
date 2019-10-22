@@ -26,6 +26,7 @@ struct ThumbNailImage: View, UIViewRepresentable {
 
 struct ViewWithImage: View {
     
+    var onTap: (()->())?
     let images = (0...100).map{ IdentifyableImage(id: $0, name: "ThumbCatalina") }
     
     var body: some View {
@@ -34,6 +35,8 @@ struct ViewWithImage: View {
             HStack {
                 ThumbNailImage(name: image.name).allowsTightening(true).frame(width: 100, height: 100, alignment: .center)
                 Text(image.name)
+            }.onTapGesture {
+                self.onTap?()
             }
         }
     }
@@ -41,7 +44,7 @@ struct ViewWithImage: View {
 
 struct ViewWithImage_Previews: PreviewProvider {
     static var previews: some View {
-        ViewWithImage()
+        ViewWithImage(onTap: nil)
     }
 }
 
