@@ -15,7 +15,7 @@
 		62493827235EFFCB00D490B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62493825235EFFCB00D490B7 /* LaunchScreen.storyboard */; };
 		62493830235F01CD00D490B7 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 6249382F235F01CD00D490B7 /* Hero */; };
 		62493832235F01EE00D490B7 /* UIKitDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62493831235F01EE00D490B7 /* UIKitDestinationViewController.swift */; };
-		62493834235F085600D490B7 /* ViewWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62493833235F085600D490B7 /* ViewWithImage.swift */; };
+		62493834235F085600D490B7 /* ImagesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62493833235F085600D490B7 /* ImagesTableView.swift */; };
 		62493836235F099900D490B7 /* SwiftUISourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62493835235F099900D490B7 /* SwiftUISourceViewController.swift */; };
 		62493838235F2F3D00D490B7 /* ThumbNailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62493837235F2F3D00D490B7 /* ThumbNailImage.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +30,7 @@
 		62493826235EFFCB00D490B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62493828235EFFCB00D490B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62493831235F01EE00D490B7 /* UIKitDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitDestinationViewController.swift; sourceTree = "<group>"; };
-		62493833235F085600D490B7 /* ViewWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithImage.swift; sourceTree = "<group>"; };
+		62493833235F085600D490B7 /* ImagesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableView.swift; sourceTree = "<group>"; };
 		62493835235F099900D490B7 /* SwiftUISourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISourceViewController.swift; sourceTree = "<group>"; };
 		62493837235F2F3D00D490B7 /* ThumbNailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbNailImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +71,7 @@
 				6249381E235EFFC900D490B7 /* UIKitSourceViewController.swift */,
 				62493835235F099900D490B7 /* SwiftUISourceViewController.swift */,
 				62493831235F01EE00D490B7 /* UIKitDestinationViewController.swift */,
-				62493833235F085600D490B7 /* ViewWithImage.swift */,
+				62493833235F085600D490B7 /* ImagesTableView.swift */,
 				62493837235F2F3D00D490B7 /* ThumbNailImage.swift */,
 				62493820235EFFC900D490B7 /* Main.storyboard */,
 				62493823235EFFCB00D490B7 /* Assets.xcassets */,
@@ -158,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62493834235F085600D490B7 /* ViewWithImage.swift in Sources */,
+				62493834235F085600D490B7 /* ImagesTableView.swift in Sources */,
 				62493838235F2F3D00D490B7 /* ThumbNailImage.swift in Sources */,
 				62493832235F01EE00D490B7 /* UIKitDestinationViewController.swift in Sources */,
 				6249381F235EFFC900D490B7 /* UIKitSourceViewController.swift in Sources */,

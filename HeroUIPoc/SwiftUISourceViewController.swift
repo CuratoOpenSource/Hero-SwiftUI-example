@@ -9,11 +9,11 @@
 import SwiftUI
 import UIKit
 
-class SwiftUISourceViewController: UIHostingController<ViewWithImage> {
+class SwiftUISourceViewController: UIHostingController<ImagesTableView> {
 
     @objc required dynamic init?(coder aDecoder: NSCoder) {
         
-        super.init(rootView: ViewWithImage())
+        super.init(rootView: ImagesTableView())
         
         rootView.onTap = {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "B")

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ViewWithImage: View {
+struct ImagesTableView: View {
     
     var onTap: (()->())?
     
@@ -40,9 +40,9 @@ struct ViewWithImage: View {
 }
 
 #if DEBUG
-struct ViewWithImage_Previews: PreviewProvider {
+struct ImagesTableView_Previews: PreviewProvider {
     static var previews: some View {
-        ViewWithImage(onTap: nil)
+        ImagesTableView(onTap: nil)
     }
 }
 #endif
